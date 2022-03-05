@@ -1,6 +1,6 @@
 package com.kaveri.kotlinexperiments.SealedClasses
 
-sealed class Shape {
+interface Shape {
     open fun draw() {
         println("drawing inside shape")
     }
