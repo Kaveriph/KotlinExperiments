@@ -34,5 +34,8 @@ fun getLoadStateSealedWAY() {
         is LoadState.Error -> {
             println("Error : ${(Repository.loadState as LoadState.Error).errorStr}")
         }
+        is Exception -> {
+            println("exception occured")
+        }
     }
 }
